@@ -4,6 +4,7 @@ https://johnpalalia.github.io/UCB_Project3/templates/home.html
 
 Powerball was launched in 23 states in 1992, and its membership has gradually increased in the years since. As a result, some states have seen more jackpot winners than others. Use our interactive map to see how many jackpots have been claimed in your state, and find out where it stands compared to other states in the table beneath.
 
+https://www.powerball.net/winners
 https://johnpalalia.github.io/UCB_Project3/map.html
 
 State:	Jackpot Winners:	Percentage of Total
