@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type ="text/css" href="{{url_for('static', filename='style.css')}}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+<title>UCB Project 3</title>
+</head>
+<body style="background-color: white">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+           <a class="navbar-brand logo" href="home.html"> 
+            <span class="nav-color">Machine Learning & Lotto Numbers</span></a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="http://127.0.0.1:5000/" >Home</a> M</li>
+            <li><a href="http://127.0.0.1:5000/data" >Data</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class = "container" >
+        
+            <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                    <h2>Give Me The Daily3</h2>
+                    <hr>
+   
+                      <form method=post enctype=multipart/form-data>
+
+                        <p class = "p1">Predict Using a Trained ML Model:  </p>
+                        <p> <input type=file name=file>  </p>                       
+                        <p> <button type="submit" name="Predict" value="Submit">Predict</button> </p>
+
+                        <br><br>
+
+                         <p class = "p1">Train and Predict a New Model: 
+                         <p>Choose an ML Model:
+                            <select>
+                                <option value = "KerasSequence">Keras Sequence</option>
+                                <option value = "SKLearnLinearModel">SKLearn LinearModel</option>
+                                <option value = "CPT">Compact Prediction Tree</option>
+                            </select>  </p>
+                        </p>
+                          
+                         <p>Upload Data: <input type=file name=file> </p>
+                        <button type="submit" name = "Train" value="Train">Train & Predict</button>
+                        </form>  
+                        <br>
+
+                        <div class = "row">
+                        
+                            <div class = "column" style="background-color: #aaa;">
+                                <h2>Prediction:</h2>                   
+                                          
+                                    <p class = "p2"> 1 2 3 </p>
+                                    <p class = "p1">Model Probability: </p>
+                                </div>
+                            <div class = "column"style="background-color: #bbb;">
+                                <h2>Actuals:</h2>                   
+                                          
+                                    <form method=post enctype=multipart/form-data>
+                                        <input type ="text" id = firstNumberActual name = firstNumberActual style="font-size: 40pt; height:80px; width: 50px;font-weight:bolder;" maxlength = "1">
+                                        <input type ="text" id = secondNumberActual name = secondNumberActual style="font-size: 40pt; height:80px; width: 50px;font-weight:bolder;" maxlength = "1">
+                                        <input type ="text" id = thirdNumberActual name = thirdNumberActual style="font-size: 40pt; height:80px; width: 50px;font-weight:bolder;" maxlength = "1">
+                                        <p> <input type ="text" id = drawDate name = drawDate placeholder = "MM/DD/YYY">
+                                        <input type ="text" id = drawSequence name = drawSequence placeholder = "Monring/Evening"> </p>
+
+                                        <button type="submit" name="save" value="Submit" style="font-weight:bold;" onclick = addToCsv() >Save</button> 
+                                    </form>
+                                    <br>
+                                    
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+                    
+               
+                :
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                        <div class="panel-body">                                    
+                             <h1>How to Play</h1>                           
+                            <p class="p1">Step 1:  Find a retailer</p>
+                            <p class="p1">Step 2:  Pick a number from 0 to 9 for each three number positions.</p>
+                            <p class= "p1">Sep 3:  Pick a playstyle. 
+                                 <ul>
+                                <li>  Straight - Your numbers must match the winning numbers in exactly the same order. </li>
+                                <li>  Box - Your numbers must match the winning numbers in ANY order. </li>
+                                <li>  Straight/Box - This is a combination of both the Straight and Box playstyles and your $1 play is split evenly between the two ways of winning. If you match the winning numbers in exact order, you win approximately half the Straight prize plus approximately half the Box prize. If you match the winning numbers in any other order, you win approximately half the Box prize only. </li>
+                            </ul>
+                        </p>
+                            </div>
+                                
+                        </div>
+                </div>     
+            </div>    
+    </div>
+</body>
+</html>
