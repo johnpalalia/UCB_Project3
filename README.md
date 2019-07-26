@@ -6,7 +6,7 @@ Powerball was launched in 23 states in 1992, and its membership has gradually in
 
 https://www.powerball.net/winners
 
-href="https://johnpalalia.github.io/UCB_Project3/map.html">This Map shows the number of all time lotto winners by state.</a>
+a> href="https://johnpalalia.github.io/UCB_Project3/map.html">This Map shows the number of all time lotto winners by state.</a>
 
 State:	Jackpot Winners:	Percentage of Total
 Jackpot Winners:
