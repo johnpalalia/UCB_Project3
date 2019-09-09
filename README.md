@@ -1,3 +1,9 @@
+Use machine learning models be used to predict the next lotto numbers Lottery Game: Predict the numbers in the California Daily 3 game (less numbers than MegaMillions or Powerball) Machine Learning: Sklearn regression models Keras sequential model
+
+Tools / Technologies used: Python, Keras (Machine Learning Model), SKLearn (Machine Learning Model), Jupyter Notebook, Power Point, HTML, CSS,
+
+Contributors: Reyna, Danny, Susi and John
+
 # UCB_Project3
 
 https://johnpalalia.github.io/UCB_Project3/templates/home.html
